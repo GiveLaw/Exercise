@@ -18,7 +18,10 @@
 1. Install Python
   - You can do it from Python's official website: [Python](https://www.python.org/)
   - You can also follow [this](https://youtu.be/UvcQlPZ8ecA) tutorial.
-2. Open the terminal and execute the following commands:
+2. Open the terminal and execute the following command:
+  ```python
+    pip install -U Flask
+  ```
 
 ### Note:
 **I performed this exercise this way because I did not understand well how the final result had to be.**
@@ -28,7 +31,7 @@ The Program/App is completely in Spanish
 ***The program is not complete, the data cannot be edited yet***
 
 
-__----------------------------------------------------------------------------------------__
+***
 
 
 # Ejercicio
@@ -51,7 +54,10 @@ __------------------------------------------------------------------------------
 1. Istalar Pyhon
  - Puede hacerlo desde su página oficial: [Python](https://www.python.org/)
  - O tambien seguir [éste](https://youtu.be/zKhbbrN7JhY) tutorial.
-2. Abrir la terminal y correr las siguientes lineas:
+2. Abrir la terminal y correr la siguiente linea para instalar Flask en Python:
+  ```python
+    pip install -U Flask
+  ```
 
 ### Nota:
 **He hecho este ejercicio así porque no entendía bien como tenía que ser el resultado final.**
