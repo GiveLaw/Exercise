@@ -53,5 +53,7 @@ __------------------------------------------------------------------------------
 
 ### Nota:
 **He hecho este ejercicio así porque no entendía bien como tenía que ser el resultado final.**
+
 El Programa/Aplicación, está completamente en Español
+
 ***El Programa no está completo, aún no se pueden editar los datos***
