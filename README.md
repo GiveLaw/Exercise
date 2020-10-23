@@ -22,7 +22,9 @@
 
 ### Note:
 **I performed this exercise this way because I did not understand well how the final result had to be.**
+
 The Program/App is completely in Spanish
+
 ***The program is not complete, the data cannot be edited yet***
 
 
