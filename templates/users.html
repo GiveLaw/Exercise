@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Lista de Usuarios</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="Aquí verás los 'usurarios' registrados">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap.css')}}">
+	</head>
+	<body>
+		<main class="jumbotron">
+			<h1 class="text-center mb-auto">Lista / Tabla<br>USUARIOS / REGISTROS</h1>
+			<table class="table table-hover">
+				<thead style="background-color: #2b3d50">
+					<td>Nombre</td>
+					<td>E-mail</td>
+					<td>Km por Semana</td>
+				</thead class="table table-active">
+				<tbody>
+				{% for r in rows %}
+					<tr class="table-secondary">
+						<td>{{r['name']}}</td>
+						<td>{{r['email']}}</td>
+						<td width="300">{{r['km']}}</td>
+						<td class="text-center" style="background-color: #2b3c50;">{{r['suggest']}}</td>
+						<td width="200" class="btn-group-sm">
+							<a href="/users/edit/{{r.id}}" class="btn btn-info" style="margin-right: 5px;">Editar</a>
+							<a href="/users/delete/{{r.id}}" class="btn btn-danger">Eliminar</a>
+						</td>
+					</tr>
+				{% endfor %}
+				</tbody>
+			</table>
+			<a href="/"><button type="button" class="btn btn-primary">Inicio</button></a>
+		</main>
+	</body>
+</html>

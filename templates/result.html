@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Resultado</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta name="description" content="Esta Página ta dirá si caminas lo suficiente o no">
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap.css')}}">
+	</head>
+	<body>
+		<main class="jumbotron col-md-4 offset-md-4 my-auto">
+			<h1 class="text-center">Ocurrió un Error</h1>
+			<p class="text-center">{{error}}</p>
+			<div class="modal-footer" style="background-color: rgba(0,0,0,0);">
+				<a href="/users"><button type="button" class="btn btn-secondary">Ver Lista</button></a>
+				<a href="/"><button type="button" class="btn btn-primary">Volver</button></a>
+			</div>
+		</main>
+	</body>
+</html>
