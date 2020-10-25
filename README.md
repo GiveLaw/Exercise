@@ -1,5 +1,5 @@
 # Exercise
-## Readme file in both English and Spanish
+## Readme (English)
 
 ### About:
 - I used:
@@ -35,7 +35,7 @@ The Program/App is completely in Spanish
 
 
 # Ejercicio
-## Archivo Léeme en Ingles y Español
+## Archivo (Léeme)
 
 ### Acerca de:
 - Usé:
