@@ -53,7 +53,7 @@ The Program/App is completely in Spanish
 #### Si usted no tiene los programas necesarios para correr el archivo **App.py**, puede seguir estos pasos:
 1. Istalar Pyhon
  - Puede hacerlo desde su página oficial: [Python](https://www.python.org/)
- - O tambien seguir [éste](https://youtu.be/zKhbbrN7JhY) tutorial.
+ - O tambien seguir [este](https://youtu.be/zKhbbrN7JhY) tutorial.
 2. Abrir la terminal y correr la siguiente linea para instalar Flask en Python:
   ```python
     pip install -U Flask
