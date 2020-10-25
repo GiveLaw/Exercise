@@ -35,7 +35,7 @@ The Program/App is completely in Spanish
 
 
 # Ejercicio
-## Archivo (Léeme)
+## Léeme (Español)
 
 ### Acerca de:
 - Usé:
