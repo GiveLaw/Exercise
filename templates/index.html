@@ -1,26 +1,16 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>¿Cuánto caminas?</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta name="description" content="Esta Página te dirá si caminas lo suficiente o no">
-		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='bootstrap.css')}}">
-	</head>
-	<body>
-		<main class="jumbotron col-md-4 offset-md-4 my-auto">
-			<h1 class="text-center">Km. al Día</h1>
-			<form action="{{url_for('add_user')}}" method="POST">
-				<input type="text" class="form-control" name="name" placeholder="Nombre (Juan)" autocomplete="on" required>
-				<input type="email" class="form-control" name="mail" placeholder="E-mail (nombre@ejemplo.com)" autocomplete="on" required>
-				<input type="number" class="form-control" name="km" placeholder="Km que recorres en una semana" autocomplete="off" required>
-				<div class="modal-footer" style="background-color: rgba(0,0,0,0);">
-					<a href="/users"><button type="button" class="btn btn-info">Ver Lista</button></a>
-					<input type="submit" value="Añadir" class="btn btn-success">
-					<button type="reset" class="btn btn-secondary">Limpiar</button>
-				</div>
-			</form>
-		</main>
-	</body>
-</html>
+{% extends 'base.html' %}
+{% block content %}
+	<div class="container jumbotron col-md-4 offset-md-4 my-auto">
+		<h1 class="text-center">{% block title %}Km a la semana{% endblock %}</h1>
+		<form action="{{url_for('add_user')}}" method="POST">
+			<input type="text" class="form-control" name="name" placeholder="Nombre (Juan)" autocomplete="on" required>
+			<input type="email" class="form-control" name="mail" placeholder="E-mail (nombre@ejemplo.com)" autocomplete="on" required>
+			<input type="number" class="form-control" name="km" placeholder="Km que recorres en una semana" autocomplete="off" required>
+			<div class="modal-footer" style="background-color: rgba(0,0,0,0);">
+				<a href="/users"><button type="button" class="btn btn-info">Ver Lista</button></a>
+				<input type="submit" value="Añadir" class="btn btn-success">
+				<button type="reset" class="btn btn-secondary">Limpiar</button>
+			</div>
+		</form>
+	</div>
+{% endblock %}

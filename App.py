@@ -4,6 +4,8 @@ from flask import Flask, render_template, request, redirect, url_for
 
 import sqlite3
 conn = sqlite3.connect('database.db')
+conn.execute('DROP TABLE IF EXISTS users')  # elimina la tabla si esta existe
+# crea una tabla solo si esta no existe:
 conn.execute(
 	'''
 		CREATE TABLE IF NOT EXISTS users(
@@ -11,7 +13,8 @@ conn.execute(
 			name TEXT VARCHAR(50),
 			email TEXT VARCHAR(30) UNIQUE,
 			km NUMBER,
-			suggest TEXT)
+			suggest TEXT
+		);
 	''')
 conn.close()
 
@@ -36,6 +39,8 @@ def add_user():
 				km_week = 0
 			elif km_week < 4:
 				sug = 'Debes de Caminar más'
+			elif km_week == 4:
+				sug = 'Normal'
 			else:
 				sug = 'Felicidades'
 
@@ -89,20 +94,6 @@ def edit(id, name, email, km):
 		finally:
 			db.close()
 
-
-
-# @app.route('/users/edit/<id>')
-# def edit(id):
-# 	try:
-# 		db = sqlite3.connect('database.db')
-# 		cs = db.cursor()
-# 		cs.execute('UPDATE ')
-# 		db.commit()
-# 		db.close()
-# 		return redirect(url_for('users'))
-# 	except BaseException as e:
-# 		db.rollback()
-# 		return render_template('result.html', error=e)
 
 
 
