@@ -1,67 +1,26 @@
 # Exercise
-## Readme (English)
+## Readme
 
 ### About:
 - I used:
-  - Pyhon
+  - Pyhon3
   - Flask
   - SQLite3
   - HTML
   - CSS
-  - SublimeText3
 
 ### Steps:
 1. Clone or download the repository
-2. Execute/Run the **App.py** file
+2. Execute/Run:
+  ```cmd
+    flask run
+  ```
 
-#### In case you do not have the necessary programs installed to run the **App.py** file, you can follow these steps:
+#### In case you do not have the necessary programs installed to run the **app.py** file, you can follow these steps:
 1. Install Python
-  - You can do it from Python's official website: [Python](https://www.python.org/)
-  - You can also follow [this](https://youtu.be/UvcQlPZ8ecA) tutorial.
+  - You can download it from Python's official website: [Python](https://www.python.org/)
+  - And install it follow [this](https://youtu.be/UvcQlPZ8ecA) tutorial (In Spanish [here](https://youtu.be/zKhbbrN7JhY)).
 2. Open the terminal and execute the following command:
   ```python
     pip install -U Flask
   ```
-
-### Note:
-**I performed this exercise this way because I did not understand well how the final result had to be.**
-
-The Program/App is completely in Spanish
-
-***The program is not complete, the data cannot be edited yet***
-
-
-***
-
-
-# Ejercicio
-## Léeme (Español)
-
-### Acerca de:
-- Usé:
-  - Pyhon
-  - Flask
-  - SQLite3
-  - HTML
-  - CSS
-  - SublimeText3
-
-### Pasos:
-1. Clonar o descargar el repositorio
-2. Ejecutar/Correr el archivo **App.py**
-
-#### Si usted no tiene los programas necesarios para correr el archivo **App.py**, puede seguir estos pasos:
-1. Istalar Pyhon
- - Puede hacerlo desde su página oficial: [Python](https://www.python.org/)
- - O tambien seguir [este](https://youtu.be/zKhbbrN7JhY) tutorial.
-2. Abrir la terminal y correr la siguiente linea para instalar Flask en Python:
-  ```python
-    pip install -U Flask
-  ```
-
-### Nota:
-**He hecho este ejercicio así porque no entendía bien como tenía que ser el resultado final.**
-
-El Programa/Aplicación, está completamente en Español
-
-***El Programa no está completo, aún no se pueden editar los datos***

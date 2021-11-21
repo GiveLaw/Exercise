@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% block content %}
+<main class="jumbotron" style="background-color: #2b3d50">
+	<br>
+	<h1 class="text-center mb-auto">{% block title%} Editando un usuario {% endblock %}</h1>
+	<br>
+	<form method="POST">
+		<table class="table">
+			<thead class="text-center">
+				<td>Nombre</td>
+				<td>E-mail</td>
+				<td>Km por semana</td>
+				<td>Sugeremcia temporal</td>
+			</thead>
+			<tbody class="table table-active">
+				<tr class="">
+					<td class="text-center">
+						<input class="form-control" type="text" name="name" placeholder="Nombre" value="{{ request.form['name'] or post['name'] }}" required autocomplete>
+					</td>
+					<td class="text-center">
+						<input class="form-control" type="mail" name="mail" placeholder='nombre@ejemplo.com' value="{{ request.form['mail'] or post['mail'] }}" required autocomplete>
+					</td>
+					<td>
+						<input class="form-control" type="number" name="km" placeholder="Cantidad de Kms" value="{{ request.form['km'] or post['km'] }}" required>
+					</td>
+					<td class="text-center" width="25%">
+						{{ request.form['suggest'] or post ['suggest'] }}
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="modal-footer" style="background-color: #0000">
+			<input type="submit" value="Guardar" class="btn btn-info">
+			<a href="/users/delete/{{post.id}}" class="btn btn-danger">Eliminar</a>
+			<input class='btn btn-dark' type="button" value="Cancelar" onClick="history.go(-1);">
+		</div>
+	</form>
+</main>
+{% endblock %}
